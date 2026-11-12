@@ -1,0 +1,23 @@
+{
+  "id": "$BASE/canvas/1",
+  "type": "Canvas",
+  "height": 800,
+  "width": 600,
+  "label": {
+    "zh": [
+      "封面"
+    ],
+    "en": [
+      "Cover"
+    ],
+    "none": [
+      "I"
+    ]
+  },
+  "items": [
+    {
+      "id": "$BASE/annotations/1",
+      "type": "AnnotationPage"
+    }
+  ]
+}

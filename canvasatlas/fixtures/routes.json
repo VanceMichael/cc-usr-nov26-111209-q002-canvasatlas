@@ -1,0 +1,24 @@
+{
+  "/collection": {
+    "file": "collection.json"
+  },
+  "/book": {
+    "file": "manifest.json"
+  },
+  "/canvas/1": {
+    "file": "canvas.json"
+  },
+  "/annotations/1": {
+    "file": "unavailable.json",
+    "status": 503
+  },
+  "complete:/annotations/1": {
+    "file": "annotation.json"
+  },
+  "updated:/book": {
+    "file": "new.json"
+  },
+  "updated:/annotations/1": {
+    "file": "annotation.json"
+  }
+}

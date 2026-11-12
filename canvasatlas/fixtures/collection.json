@@ -1,0 +1,19 @@
+{
+  "id": "$BASE/collection",
+  "type": "Collection",
+  "label": {
+    "zh": [
+      "设计样册"
+    ]
+  },
+  "items": [
+    {
+      "id": "book",
+      "type": "Manifest"
+    },
+    {
+      "id": "collection",
+      "type": "Collection"
+    }
+  ]
+}

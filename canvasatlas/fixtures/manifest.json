@@ -1,0 +1,56 @@
+{
+  "id": "$BASE/book",
+  "type": "Manifest",
+  "label": {
+    "zh": [
+      "样册"
+    ]
+  },
+  "items": [
+    {
+      "id": "$BASE/canvas/1",
+      "type": "Canvas",
+      "height": 800,
+      "width": 600,
+      "label": {
+        "zh": [
+          "封面"
+        ],
+        "en": [
+          "Cover"
+        ],
+        "none": [
+          "I"
+        ]
+      },
+      "items": [
+        {
+          "id": "$BASE/annotations/1",
+          "type": "AnnotationPage"
+        }
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "id": "$BASE/range/a",
+      "type": "Range",
+      "items": [
+        {
+          "id": "$BASE/canvas/1",
+          "type": "Canvas"
+        }
+      ]
+    },
+    {
+      "id": "$BASE/range/b",
+      "type": "Range",
+      "items": [
+        {
+          "id": "$BASE/canvas/1",
+          "type": "Canvas"
+        }
+      ]
+    }
+  ]
+}

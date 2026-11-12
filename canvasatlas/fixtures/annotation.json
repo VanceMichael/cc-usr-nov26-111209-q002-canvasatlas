@@ -1,0 +1,38 @@
+{
+  "id": "$BASE/annotations/1",
+  "type": "AnnotationPage",
+  "items": [
+    {
+      "id": "$BASE/painting/1",
+      "type": "Annotation",
+      "motivation": "painting",
+      "target": "$BASE/canvas/1",
+      "body": {
+        "type": "Choice",
+        "items": [
+          {
+            "id": "$BASE/image/front",
+            "type": "Image",
+            "service": [
+              {
+                "id": "$BASE/image/service",
+                "type": "ImageService3"
+              }
+            ]
+          },
+          {
+            "type": "SpecificResource",
+            "source": {
+              "id": "$BASE/image/back",
+              "type": "Image"
+            },
+            "selector": {
+              "type": "FragmentSelector",
+              "value": "xywh=10,20,50,70"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
