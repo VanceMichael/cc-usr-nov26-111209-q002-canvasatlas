@@ -37,21 +37,10 @@
       "width": 600,
       "label": {
         "zh": [
-          "封面"
-        ],
-        "en": [
-          "Cover"
-        ],
-        "none": [
-          "I"
+          "空白页"
         ]
       },
-      "items": [
-        {
-          "id": "$BASE/annotations/1",
-          "type": "AnnotationPage"
-        }
-      ]
+      "items": []
     }
   ],
   "structures": [
