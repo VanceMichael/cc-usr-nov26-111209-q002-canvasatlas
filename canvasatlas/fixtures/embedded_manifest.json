@@ -1,0 +1,40 @@
+{
+    "id": "$BASE/embedded/book",
+    "type": "Manifest",
+    "label": {
+        "zh": [
+            "内嵌样册"
+        ]
+    },
+    "items": [
+        {
+            "id": "$BASE/canvas/embedded",
+            "type": "Canvas",
+            "height": 600,
+            "width": 400,
+            "label": {
+                "none": [
+                    "E"
+                ]
+            },
+            "items": [
+                {
+                    "id": "$BASE/annotations/embedded",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "$BASE/painting/embedded",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "$BASE/canvas/embedded",
+                            "body": {
+                                "id": "$BASE/image/embedded",
+                                "type": "Image"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

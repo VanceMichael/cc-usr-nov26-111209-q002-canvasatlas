@@ -1,0 +1,10 @@
+{
+    "id": "http://other-origin.test/foreign/book",
+    "type": "Manifest",
+    "label": {
+        "en": [
+            "Foreign Manifest"
+        ]
+    },
+    "items": []
+}

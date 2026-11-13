@@ -8,6 +8,9 @@
   "/canvas/1": {
     "file": "canvas.json"
   },
+  "/canvas/2": {
+    "file": "canvas2.json"
+  },
   "/annotations/1": {
     "file": "unavailable.json",
     "status": 503
@@ -20,5 +23,14 @@
   },
   "updated:/annotations/1": {
     "file": "annotation.json"
+  },
+  "/embedded/book": {
+    "file": "embedded_manifest.json"
+  },
+  "/linked/book": {
+    "file": "linked_manifest.json"
+  },
+  "/broken/doc": {
+    "file": "broken.json"
   }
 }

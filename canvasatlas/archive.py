@@ -6,10 +6,10 @@ from pathlib import Path
 
 
 class Archive:
-    def __init__(self, database, objects):
+    def __init__(self, database, objects, timeout=30):
         self.objects = Path(objects)
         self.objects.mkdir(parents=True, exist_ok=True)
-        self.connection = sqlite3.connect(database)
+        self.connection = sqlite3.connect(database, timeout=timeout)
         self.connection.execute('pragma foreign_keys=on')
         self.connection.executescript("""
             create table if not exists captures (
@@ -43,6 +43,14 @@ class Archive:
                 (url, status, content_type, digest, len(body)),
             )
         return cursor.lastrowid
+
+    def digest_for(self, capture_id):
+        row = self.connection.execute(
+            'select digest from captures where id=?', (capture_id,)
+        ).fetchone()
+        if row is None:
+            raise KeyError(capture_id)
+        return row[0]
 
     def read(self, capture_id):
         row = self.connection.execute('select digest from captures where id=?', (capture_id,)).fetchone()

@@ -1,0 +1,12 @@
+{
+    "id": "$BASE/canvas/2",
+    "type": "Canvas",
+    "height": 800,
+    "width": 600,
+    "label": {
+        "zh": [
+            "空白页"
+        ]
+    },
+    "items": []
+}

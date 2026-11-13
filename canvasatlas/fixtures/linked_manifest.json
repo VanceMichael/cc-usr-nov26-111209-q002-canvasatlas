@@ -1,0 +1,19 @@
+{
+    "id": "$BASE/linked/book",
+    "type": "Manifest",
+    "label": {
+        "zh": [
+            "跨域样册入口"
+        ]
+    },
+    "items": [
+        {
+            "id": "http://other-origin.test/foreign/book",
+            "type": "Manifest"
+        },
+        {
+            "id": "$BASE/broken/doc",
+            "type": "Manifest"
+        }
+    ]
+}
